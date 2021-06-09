@@ -5,8 +5,8 @@
     <p><%=startingContent%></p> 
 <%posts.forEach((post)=>{%>
     <h1><%=post.title%></h1>
-    <p><%=post.body.slice(0,100) +" ... "%>
-        <a href="/posts/<%= post.title%>" method="post">Read More</a>
+    <p><%=post.content.slice(0,100) +" ... "%>
+        <a href="/posts/<%= post._id%>" method="post">Read More</a>
     </p>
     <%});%>
 </body>
